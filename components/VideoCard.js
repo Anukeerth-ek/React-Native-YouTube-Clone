@@ -3,10 +3,12 @@ import { View, Image, Text } from 'react-native'
 import { formatViews } from '../utils/Numbers';
 import * as Icon from 'react-native-feather'
 
+
 const VideoCard = ({video}) => {
   return (
     <View className="mt-4">
-    <Image source={video.thumbnail} className="h-52 w-full"/>
+      
+    <Image  source={{ uri: video.thumbnail[0].url }}  className="h-52 w-full"/>
     <View className="flex items-end mr-2 mb-5 -mt-6">
       <View className="bg-black rounded "> 
           <Text className="text-white font-semibold text-xs">
@@ -17,7 +19,8 @@ const VideoCard = ({video}) => {
     </View>
     <View 
       className="flex-row justify-between items-center pb-5 space-x-3 mx-2">
-          <Image source={video.channelThumbnail} className="h-9 w-9 rounded-full" />
+     <Image source={{ uri: video.channelThumbnail[0].url }} className="h-9 w-9 rounded-full" />
+
          
           <View className="flex-1 space-y-1">
               <Text className="text-white font-semibold">
@@ -35,4 +38,4 @@ const VideoCard = ({video}) => {
   )
 }
 
-export default VideoCard
+export default VideoCard; 

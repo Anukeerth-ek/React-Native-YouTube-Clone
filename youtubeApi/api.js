@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { rapidApiKey } from '../constants';
-import { err } from 'react-native-svg';
+
 
 export  const fetchTrendingVideo = async (params)=> {
     const options = {

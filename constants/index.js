@@ -16,27 +16,27 @@ export const categories = [
 export const shortVideos = [
     {
         id: 1,
-        title: "Flutter Vs React Native ",
+        title: "Fruits shop UI in React Native",
         viewCount: '488k',
         image: require('../assets/images/short_1.png')
     },
     {
         id: 2,
-        title: "Flutter Vs React Native ",
-        viewCount: '488k',
+        title: "Top 3 reasons why you should learn react native",
+        viewCount: '708k',
         image: require('../assets/images/short_2.png')
     },
     {
         id: 3,
-        title: "Flutter Vs React Native ",
-        viewCount: '488k',
-        image: require('../assets/images/short_2.png')
+        title: "What is React Native",
+        viewCount: '54k',
+        image: require('../assets/images/shorts_3.png')
     },
     {
         id: 4,
         title: "Flutter Vs React Native ",
-        viewCount: '488k',
-        image: require('../assets/images/short_1.png')
+        viewCount: '38k',
+        image: require('../assets/images/shorts_4.png')
     },
 ] 
 

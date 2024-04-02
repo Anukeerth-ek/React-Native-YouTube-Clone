@@ -10,7 +10,7 @@ import shortsIcon from "../assets/icons/shorts_icon.png";
 import { categories, shortVideos, youtubeVideos } from "../constants/index";
 import ShortVideoCard from "../components/ShortVideoCard";
 import VideoCard from "../components/VideoCard";
-import { fetchTrendingVideo, videoHandler } from "../youtubeApi";
+import { fetchTrendingVideo, videoHandler } from "../youtubeApi/api";
 
 export default function HomeScreen() {
 
@@ -69,7 +69,10 @@ export default function HomeScreen() {
                               })}
                          </ScrollView>
                     </View>
-
+                    
+                       
+                             <VideoCard video={videos[2]} />  
+                  
                     {/* SHORTS SECTIONS */}
                     <View className="px-2 space-y-3 ">
                          <View className="mx-1 flex-row items-center space-x-2">
